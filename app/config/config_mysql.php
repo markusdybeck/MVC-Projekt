@@ -2,7 +2,6 @@
 
 return [
     // Set up details on how to connect to the database
-	// BTH
 
     'dsn'     => "",
     'username'        => "",
@@ -13,8 +12,6 @@ return [
 
     // Display details on what happens
     'verbose' => false,
-
-
 
     // Throw a more verbose exception when failing to connect
     //'debug_connect' => 'true',
