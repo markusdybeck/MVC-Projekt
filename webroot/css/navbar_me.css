@@ -1,0 +1,105 @@
+/**
+ * Based on http://dbwebb.se/coachen/en-navbar-med-drop-down-meny-i-ren-html-och-css
+ * Changed to only style li-items instead of a.
+ */
+#nav-wrap {
+    width: 100%;
+    background-color: #eee;
+    font-size: 12px;
+    border-bottom: 1px solid #ddd;
+
+
+}
+#navbar {
+    width: 1000px;
+    margin: auto;
+    background: #000;
+    margin-bottom: 24px;
+}
+
+.navbar {
+  background-color: #eee;
+  border-radius: 4px;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navbar li {
+    margin-bottom: -1px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+  position: relative
+
+}
+
+.navbar a {
+  display: block;
+  padding: 0.7em;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+
+}
+
+.navbar i {
+    color: #222;
+    margin-right: 3px;
+
+}
+
+.navbar li:hover {
+  color: #000;
+  border-color: #ddd;
+  background: -webkit-linear-gradient(bottom, #fff , #eee); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top, #fff, #eee); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top, #fff, #eee); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top, #fff , #eee); /* Standard syntax */
+
+  border-bottom-color: #fff;
+}
+
+.navbar li.selected-parent,
+.navbar li.selected {
+  color: #000;
+  background: #fff;
+  border-radius: 3px 3px 0px 0px;
+  border-color: #ddd;
+  border-bottom-color: #fff;
+}
+
+.navbar ul ul {
+  background-color: #fff;
+  padding: 2px 6px 2px 0;
+  position: absolute;
+  left: -9999px;
+  z-index: 2;
+  background-color: #eee;
+}
+
+.navbar li li {
+  width: 100%;
+  border-top: none;
+  border-left: 4px solid transparent;
+}
+
+.navbar li:hover ul {
+  left: 0;
+}
+
+.navbar li li:hover {
+  color: #666;
+  border-color: #666;
+}
+
+.navbar li li.selected {
+  color: #222;
+  border-color: #222;
+}
